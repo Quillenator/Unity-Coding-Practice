@@ -22,6 +22,33 @@ public class Test : MonoBehaviour {
 
     public static int enemyCount = 0;
 
+    //Generics
+    public T GenericMethod<T> (T param) where T : IEnumerable
+    {
+
+        return param;
+    }
+
+
+    public string name;
+    public int power;
+
+    public Test(string newName, int newPower)
+    {
+        name = newName;
+        power = newPower;
+    }
+
+
+
+
+
+
+
+
+
+
+
 	// Use this for initialization
 	void Start () {
 
